@@ -1,0 +1,87 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<link rel="stylesheet" href="/css/styles.css">
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1><span class="fa fa-sign-in"></span> Inisiar Sesión</h1>
+
+            <!-- show any messages that come back with authentication -->
+            <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+            <% } %>
+
+            <!-- LOGIN FORM -->
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="form-group">
+                    <label>Recordar contraseña:</label>
+                    <input type="checkbox" class="form-control" name="remember" value="yes">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">Iniciar Sesión</button>
+            </form>
+
+            <hr>
+
+            <p>Necesitas crear una cuenta? <a href="/signup">Crear Cuenta</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<style media="screen">
+  body {
+    background: #00aab2!important;
+  }
+  .inverted {
+    color: #FFFFFF;
+    background: #00aab2!important;
+  }
+  #login-form input[type=email], #login-form input[type=password], #login-form textarea {
+    background: #009da5!important;
+    color: white!important;
+    border: none!important;
+  }
+  #login-form input[type=submit] {
+    color: #00aab2!important;
+  }
+  .nav-toggle.two {
+    background: #00aab2!important;
+  }
+  .btn-primary {
+    background: #000000!important;
+  }
+  .nav-toggle.two .widescreen a:not(.btn):not(.btn-primary):not(.btn-secondary):not(.btn-primary-enterprise):not(.btn-secondary-enterprise):hover {
+    color: #000000!important;
+  }
+  .form-group label {
+    color: #FFF!important;
+    font-size: 0.8em;
+  }
+
+  input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#cacaca}input::-moz-placeholder,textarea::-moz-placeholder{color:#cacaca}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#cacaca}input::placeholder,textarea::placeholder{color:#cacaca}
+
+</style>
