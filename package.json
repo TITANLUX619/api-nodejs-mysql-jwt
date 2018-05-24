@@ -11,7 +11,7 @@
     "typings": "typings"
   },
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
+    "bcrypt-nodejs": "~0.0.3",
     "body-parser": "~1.13.2",
     "cheerio": "^0.22.0",
     "connect-flash": "^0.1.1",
@@ -20,7 +20,7 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.3.4",
     "express": "^4.13.4",
-    "express-flash": "0.0.2",
+    "express-flash": "~0.0.2",
     "express-handlebars": "^3.0.0",
     "express-myconnection": "^1.0.4",
     "express-session": "^1.15.0",
@@ -34,7 +34,6 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "pg-hstore": "^2.3.2",
-    "play-sound": "^1.1.1",
     "request": "^2.79.0",
     "sequelize": "^4.8.3",
     "serve-favicon": "^2.3.0",
